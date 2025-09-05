@@ -1,0 +1,107 @@
+.wrap details > summary::marker,
+.wrap details > summary::-webkit-details-marker {
+	font-size: 1.3em;
+	cursor: pointer;
+}
+#export-tabs-nav {
+	display: inline;
+	line-height: 1.3;
+	list-style: none;
+}
+.export-tab {
+	margin-right: 0.2em;
+	padding: 0.5em 0.9em;
+	background: #dedede;
+	cursor: pointer;
+	border: 1px solid #999;
+}
+.export-tab.active {
+	color: #000 !important;
+	font-weight: 600;
+	background: #fffefc;
+	border-bottom: 1px solid #fffefc !important;
+}
+.export-filters select,
+.export-filters textarea {
+	width: 250px;
+	margin-right: 1em;
+}
+.export-filters li textarea {
+	vertical-align: middle;
+}
+.export-filters li label {
+	display: inline-block;
+	width: 100px;
+	font-weight: 600;
+}
+.export-filters li label.users-options {
+	width: 300px;
+}
+#user-filters .columns .options label {
+	font-weight: 400;
+	width: 300px;
+}
+.export-filters li select + label {
+	margin-left: 1em;
+	width: 100px;
+}
+.export-filters li .media-types label {
+	font-weight: 400;
+}
+.options {
+	margin: 0.5em 0;
+}
+#export-form {
+	margin-top: -1px;
+	padding: 1em;
+	background: #fffefc;
+	border: 1px solid #999;
+}
+#export-panels,
+.wp-core-ui .button-primary {
+	margin-top: 1em;
+}
+.export-panel {
+	margin-top: -1em;
+}
+.post-ids-fieldset {
+	display: inline;
+	margin-left: 1em;
+	vertical-align: middle;
+}
+.post-ids-fieldset legend {
+	font-weight: 600;
+	margin-left: -2px;
+}
+.post-ids-fieldset label {
+	width: 70px;
+	font-weight: 400;
+}
+.non-checkbox-panel {
+	 margin-left: unset !important;
+}
+.users-dropdown {
+	padding-bottom: 1em;
+	border-bottom: 1px solid #dcdcde;
+}
+
+@media all and (min-width: 800px) {
+	.export-panel.columns,
+	#panel-users .columns {
+		columns: 2;
+	}
+}
+
+@media all and (min-width: 1100px) {
+	.export-panel.columns,
+	#panel-users .columns {
+		columns: 3;
+	}
+}
+
+@media all and (min-width: 1400px) {
+	.export-panel.columns,
+	#panel-users .columns {
+		columns: 4;
+	}
+}
